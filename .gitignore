@@ -1,0 +1,5 @@
+# Visual Studio Code workspace settings
+.vscode
+
+# Node.js dependencies
+**node_modules
