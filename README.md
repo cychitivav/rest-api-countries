@@ -4,10 +4,9 @@
 
 This repository serves as a collection of solutions for Frontend Mentor challenges. Frontend Mentor provides realistic project briefs for aspiring web developers to enhance their skills by building real-world projects. Each subdirectory in this repository corresponds to a specific challenge from Frontend Mentor, and it contains the solution files.
 
-## Table of Contents 📋
+## Table of Contents 📋 <!-- omit in toc -->
 
 - [Overview 🌐](#overview-)
-- [Table of Contents 📋](#table-of-contents-)
 - [Introduction 🚀](#introduction-)
 - [Challenges 🏆](#challenges-)
 - [Directory Structure 📁](#directory-structure-)
@@ -24,7 +23,7 @@ Frontend Mentor is a platform that offers a variety of web development challenge
 
 The challenges tackled in this repository include:
 
-- [Challenge 1: Challenge Name](link-to-challenge)
+- [Challenge 1: REST Countries API with color theme switcher](rest-countries-api-with-color-theme-switcher)
 - ...
 
 ## Directory Structure 📁

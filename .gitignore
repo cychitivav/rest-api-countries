@@ -3,3 +3,9 @@
 
 # Node.js dependencies
 **node_modules
+
+# WSL files
+**Zone.Identifier
+
+# Build files
+**build
