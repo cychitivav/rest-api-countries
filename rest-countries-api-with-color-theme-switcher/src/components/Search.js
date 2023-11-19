@@ -18,7 +18,9 @@ function Filter({ onRegionChange }) {
 	return (
 		<form>
 			<select defaultValue="" onChange={onRegionChange}>
-				<option value="">Filter by Region</option>
+				<option value="" style={{ display: "none" }}>
+					Filter by Region
+				</option>
 				<option value="africa">Africa</option>
 				<option value="americas">Americas</option>
 				<option value="asia">Asia</option>
