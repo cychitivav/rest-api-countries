@@ -1,33 +1,26 @@
 import React from "react";
 import { ReactComponent as LoupeIcon } from "../assets/loupe.svg";
 
-function Search() {
+function SearchBox({ onSearchChange }) {
 	return (
-		<div>
-			<SearchBox />
-			<Filter />
-		</div>
-	);
-}
-
-function SearchBox() {
-	return (
-		<form>
+		<form className="searchBox">
 			<LoupeIcon />
-			<input type="text" placeholder="Search for a country..." />
+			<input
+				type="text"
+				placeholder="Search for a country..."
+				onChange={onSearchChange}
+			/>
 		</form>
 	);
 }
 
-function Filter() {
+function Filter({ onRegionChange }) {
 	return (
 		<form>
-			<select>
-				<option value="filter-by-region" selected style={{ display: "none" }}>
-					Filter by region
-				</option>
+			<select defaultValue="" onChange={onRegionChange}>
+				<option value="">Filter by Region</option>
 				<option value="africa">Africa</option>
-				<option value="america">America</option>
+				<option value="americas">Americas</option>
 				<option value="asia">Asia</option>
 				<option value="europe">Europe</option>
 				<option value="oceania">Oceania</option>
@@ -36,4 +29,4 @@ function Filter() {
 	);
 }
 
-export { Search };
+export { SearchBox, Filter };
