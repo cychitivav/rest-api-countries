@@ -3,4 +3,139 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    color: hsl(200, 15%, 8%);
+}
+
+svg {
+    height: 1em;
+    margin: 0 0.5rem;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+}   
+
+form {
+    background-color: white;
+    border-radius: 0.35rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 1rem 0;
+}
+
+form.searchBox {
+    width: 100%;
+    max-width: 500px;
+    min-width: 320px;
+    padding: 1rem;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+select:focus {
+    outline: none;
+}
+
+ul {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));   
+    grid-gap: 3rem; 
+    justify-content: stretch;    
+    padding: 1rem 5rem;
+}
+
+li {
+    background-color: white;
+    border-radius: 0.35rem;
+    list-style: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+li img {
+    object-fit: cover;
+}
+
+li h2 {
+    padding: 2rem 2rem 1rem;
+}
+
+li p {
+    padding: 1rem 2rem 2rem;
+    font-size: 14px;
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 500px ) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    ul {
+        padding: 1rem;
+    }
 }
