@@ -1,21 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function CountryList(props) {
-	const [countries, setCountries] = useState([]);
-
-	useEffect(() => {
-		const getData = async () => {
-			try {
-				const response = await fetch("https://restcountries.com/v3.1/all");
-				const data = await response.json();
-				setCountries(data);
-			} catch (error) {
-				console.error("Error al obtener los datos:", error);
-			}
-		};
-
-		getData();
-	});
+	let countries = props.countries;
 
 	return (
 		<ul>
@@ -28,19 +15,21 @@ function CountryList(props) {
 						.includes(props?.search?.toLowerCase())
 				) {
 					return (
-						<li key={country.cca3}>
-							<img
-								src={country.flags.png}
-								alt={`${country.name.common} flag`}
-							/>
-							<h2>{country.name.common}</h2>
-							<p>
-								<strong>Population: </strong>
-								{country.population.toLocaleString()} <br />
-								<strong>Region: </strong> {country.region} <br />
-								<strong>Capital: </strong> {country.capital}
-							</p>
-						</li>
+						<Link to={`/detail/${country.cca3}`}>
+							<li key={country.cca3}>
+								<img
+									src={country.flags.svg}
+									alt={`${country.name.common} flag`}
+								/>
+								<h2>{country.name.common}</h2>
+								<p>
+									<strong>Population: </strong>{" "}
+									{country.population.toLocaleString()} <br />
+									<strong>Region: </strong> {country.region} <br />
+									<strong>Capital: </strong> {country.capital}
+								</p>
+							</li>
+						</Link>
 					);
 				} else {
 					return null;
