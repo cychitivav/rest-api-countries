@@ -1,35 +1,34 @@
-import React, { useState } from "react";
-import { Header } from "./components/Header";
-import { SearchBox, Filter } from "./components/Search";
-import { CountryList } from "./components/CountryList";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import Detail from "./pages/Detail";
+import React, { useEffect, useState } from "react";
+import { Home } from "./pages/Home";
+import { Detail } from "./pages/Detail";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
-	const [region, setRegion] = useState("");
-	const [search, setSearch] = useState("");
+	const [countries, setCountries] = useState([]);
 
-	const handleSearchChange = (event) => {
-		console.log(event.target.value);
-		setSearch(event.target.value);
-	};
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const response = await fetch("https://restcountries.com/v3.1/all");
+				const data = await response.json();
+				setCountries(data);
+			} catch (error) {
+				console.error("Error al obtener los datos:", error);
+			}
+		};
 
-	const handleRegionChange = (event) => {
-		console.log(event.target.value);
-		setRegion(event.target.value);
-	};
+		getData();
+	});
 
 	return (
-		<>
-			<Header />
-			<nav>
-				<SearchBox onSearchChange={handleSearchChange} />
-				<Filter onRegionChange={handleRegionChange} />
-			</nav>
-			<CountryList region={region} search={search} />
-		</>
+		<Router>
+			<Routes>
+				<Route path="/" element={<Home countries={countries} />} />
+				<Route path="/detail/:code" element={<Detail countries={countries}/>} />
+			</Routes>
+		</Router>
 	);
 }
 
