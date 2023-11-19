@@ -21,8 +21,8 @@ function CountryList(props) {
 		<ul>
 			{countries.map((country) => {
 				if (
-					(props?.region !== "" ||
-						country?.region?.toLowerCase() === props?.region?.toLowerCase()) &&
+					(props?.region &&
+						country?.region?.toLowerCase() === props?.region?.toLowerCase()) ||
 					country?.name?.common
 						?.toLowerCase()
 						.includes(props?.search?.toLowerCase())
