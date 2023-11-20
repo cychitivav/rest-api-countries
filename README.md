@@ -1,58 +1,76 @@
-# Frontend Mentor Challenges 🚀 <!-- omit in toc -->
+# REST Countries API with color theme switcher solution <!-- omit in toc -->
 
-## Overview 🌐
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
-This repository serves as a collection of solutions for Frontend Mentor challenges. Frontend Mentor provides realistic project briefs for aspiring web developers to enhance their skills by building real-world projects. Each subdirectory in this repository corresponds to a specific challenge from Frontend Mentor, and it contains the solution files.
+## Table of contents <!-- omit in toc -->
 
-## Table of Contents 📋 <!-- omit in toc -->
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-- [Overview 🌐](#overview-)
-- [Introduction 🚀](#introduction-)
-- [Challenges 🏆](#challenges-)
-- [Directory Structure 📁](#directory-structure-)
-- [Getting Started 🚀](#getting-started-)
-- [Contributing 🤝](#contributing-)
-- [License 📝](#license-)
-- [Contact](#contact)
+## Overview
 
-## Introduction 🚀
+### The challenge
 
-Frontend Mentor is a platform that offers a variety of web development challenges, ranging from beginner to advanced levels. This repository is created to store my solutions to these challenges, showcasing my approach to problem-solving and my frontend development skills.
+Users should be able to:
 
-## Challenges 🏆
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode _(optional)_
 
-The challenges tackled in this repository include:
+### Screenshot
 
-- [Challenge 1: REST Countries API with color theme switcher](rest-countries-api-with-color-theme-switcher)
-- ...
+![](./design/desktop-preview.jpg)
 
-## Directory Structure 📁
+### Links
 
-The repository is organized as follows:
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [](https://your-live-site-url.com)
 
-```bash
-/frontend-mentor-exercises
-|-- challenge-1
-|   |-- ...
-|-- challenge-2
-|   |-- ...
-|-- ...
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS Grid
+- [React](https://reactjs.org/) - JS library
+
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
+### What I learned
+
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
 ```
 
-Each challenge has its own directory containing the necessary files for the solution. Images and other assets are stored in the "assets" directory within each challenge directory.
+```css
+.proud-of-this-css {
+	color: papayawhip;
+}
+```
 
-## Getting Started 🚀
+```js
+const proudOfThisFunc = () => {
+	console.log("🎉");
+};
+```
 
-To view a particular solution, navigate to the respective challenge directory. Open the `index.html` file in a web browser to see the project in action. Feel free to explore the code in the associated HTML, CSS, and JavaScript files.
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-## Contributing 🤝
+## Author
 
-While this repository is primarily for my own practice, contributions are welcome. If you see an area for improvement, please feel free to make a [pull request](https://github.com/cychitivav/frontendMentor/pulls).
-
-## License 📝
-
-This repository is licensed under the [MIT License](LICENSE). Feel free to use the code, contribute, or share it with others.
-
-## Contact
-
-If you want to contact me you can reach me at cychitivav@unal.edu.co.
+- Website - [ACristian Chitiva](https://www.cristianchitiva.dev)
+- Frontend Mentor - [@cychitivav](https://www.frontendmentor.io/profile/cychitivav)
