@@ -41,14 +41,14 @@ function Detail({ countries }) {
 										.join(", ")}{" "}
 									<br />
 									<strong>Population: </strong>{" "}
-									{country?.population.toLocaleString()} <br />
+									{country?.population?.toLocaleString()} <br />
 									<strong>Region: </strong> {country?.region} <br />
 									<strong>Sub Region: </strong> {country?.subregion} <br />
 									<strong>Capital: </strong> {country?.capital}
 								</p>
 								<p>
 									<strong>Top Level Domain: </strong>
-									{country?.tld.join(", ")} <br />
+									{country?.tld?.join(", ")} <br />
 									<strong>Currencies: </strong>
 									{Object.keys(country?.currencies).join(", ")} <br />
 									<strong>Languages: </strong>
@@ -58,8 +58,8 @@ function Detail({ countries }) {
 							<p>
 								<strong>Border Countries: </strong>
 
-								{country?.borders.map((border) => (
-									<span>
+								{country?.borders?.map((border, index) => (
+									<span key={index}>
 										{
 											countries.find((country) => country.cca3 === border).name
 												.common

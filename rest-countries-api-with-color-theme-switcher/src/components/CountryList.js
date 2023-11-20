@@ -8,7 +8,7 @@ function CountryList(props) {
 
 	return (
 		<ul>
-			{countries.map((country) => {
+			{countries.map((country, index) => {
 				if (
 					(!props?.region ||
 						country?.region?.toLowerCase() === props?.region?.toLowerCase()) &&
@@ -19,7 +19,7 @@ function CountryList(props) {
 					return (
 						<Link to={`/detail/${country.cca3}`}>
 							<li
-								key={country.cca3}
+								key={index}
 								className={darkMode ? "dark-theme" : "light-theme"}
 							>
 								<img
