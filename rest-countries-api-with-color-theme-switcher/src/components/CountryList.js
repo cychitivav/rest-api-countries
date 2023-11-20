@@ -1,8 +1,10 @@
 import React from "react";
+import { useTheme } from "../ThemeContext";
 import { Link } from "react-router-dom";
 
 function CountryList(props) {
 	let countries = props.countries;
+	const { darkMode } = useTheme();
 
 	return (
 		<ul>
@@ -16,7 +18,10 @@ function CountryList(props) {
 				) {
 					return (
 						<Link to={`/detail/${country.cca3}`}>
-							<li key={country.cca3}>
+							<li
+								key={country.cca3}
+								className={darkMode ? "dark-theme" : "light-theme"}
+							>
 								<img
 									src={country.flags.svg}
 									alt={`${country.name.common} flag`}

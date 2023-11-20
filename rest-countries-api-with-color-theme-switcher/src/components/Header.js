@@ -6,7 +6,7 @@ function Header() {
 	const { darkMode, toggleTheme } = useTheme();
 
 	return (
-		<header>
+		<header className={darkMode ? "dark-theme" : "light-theme"}>
 			<h1>Where in the world?</h1>
 			<button onClick={toggleTheme}>
 				<MoonIcon />

@@ -1,10 +1,12 @@
 import React from "react";
+import { useTheme } from "../ThemeContext";
 import { Header } from "../components/Header";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function Detail({ countries }) {
 	const { code } = useParams();
+	const { darkMode } = useTheme();
 
 	const country = countries.find((country) => country.cca3 === code);
 
@@ -13,7 +15,7 @@ function Detail({ countries }) {
 			<Header />
 			<nav>
 				<Link to="/">
-					<button>
+					<button className={darkMode ? "dark-theme" : "light-theme"}>
 						<span>←</span> Back{" "}
 					</button>
 				</Link>
@@ -26,7 +28,10 @@ function Detail({ countries }) {
 							src={country?.flags?.svg}
 							alt={`${country?.name?.common} flag`}
 						/>
-						<div>
+						<div
+							className={darkMode ? "dark-theme" : "light-theme"}
+							style={{ backgroundColor: "transparent" }}
+						>
 							<h2>{country?.name?.common}</h2>
 							<div>
 								<p>

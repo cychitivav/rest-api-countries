@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    color: hsl(200, 15%, 8%);
     text-decoration: none;
+    color: inherit;
+}
+
+*:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 svg {
@@ -108,6 +113,10 @@ select:focus {
     outline: none;
 }
 
+option {
+    color: inherit;
+}
+
 ul {
     background-color: transparent;
     display: grid;
@@ -191,8 +200,19 @@ main > div p span {
     border: 1px solid hsl(0, 0%, 80%);
     padding: 0.1rem 1.5rem;
     border-radius: 0.1rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
     display: inline-block;
+    margin: 0 0.1rem;
+}
+
+.dark-theme {
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+.light-theme {
+    background-color: white;
+    color: hsl(200, 15%, 8%);
 }
 
 @media screen and (max-width: 500px ) {
