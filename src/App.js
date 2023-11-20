@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Home } from "./pages/Home";
 import { Detail } from "./pages/Detail";
 import { ThemeProvider } from "./ThemeContext";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 
