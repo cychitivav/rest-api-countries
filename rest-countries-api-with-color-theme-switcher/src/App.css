@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
     color: hsl(200, 15%, 8%);
+    text-decoration: none;
 }
 
 svg {
@@ -143,6 +144,57 @@ li p {
     flex-grow: 1;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 5rem;
+    flex-wrap: nowrap;
+}
+
+main > div {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main > img {
+    width: 50%;
+}
+
+main > div h2 {
+    margin: 1rem;
+}
+
+main > div div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    width: 100%;
+}
+
+main > div p {
+    margin: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+main > div p strong {
+    font-weight: 600;
+}
+
+main > div p span {
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 0.1rem 1.5rem;
+    border-radius: 0.1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
 @media screen and (max-width: 500px ) {
     header {
         padding: 2rem 1rem;
@@ -158,5 +210,22 @@ li p {
 
     ul {
         padding: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    main > img {
+        width: 100%;
+    }
+
+    main > div {
+        padding: 0;
+    }
+
+    main > div > div {
+        flex-direction: column;
     }
 }
