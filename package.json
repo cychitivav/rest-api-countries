@@ -42,5 +42,6 @@
     "url": "https://github.com/cychitivav/rest-api-countries.git"
   },
   "author": "Cristian Chitiva <cychitivav@unal.edu.co>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://cristianchitiva.dev/rest-api-countries/"
 }
