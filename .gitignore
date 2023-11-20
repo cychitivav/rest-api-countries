@@ -3,6 +3,7 @@
 
 # Node.js dependencies
 **node_modules
+package-lock.json
 
 # WSL files
 **Zone.Identifier
