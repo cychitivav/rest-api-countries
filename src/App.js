@@ -21,7 +21,7 @@ function App() {
 		};
 
 		getData();
-	});
+	}, []);
 
 	return (
 		<ThemeProvider>
