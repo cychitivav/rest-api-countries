@@ -69,11 +69,11 @@ With CSS, I learned how to configure the columns of a grid with repeat and auto-
 
 In html I understood that the Link components of React Router are nothing more than `<a>` tags with the difference that they do not reload the page and only change the url. These must go inside the li of a list to work correctly.
 
-```html
+```jsx
 <li>
-  <Link to={`/country/${country.alpha3Code}`}>
-    <img src={country.flag} alt={country.name} />
-  </Link>
+	<Link to={`/country/${country.cc3}`}>
+		<img src={country.flag} alt={country.name} />
+	</Link>
 </li>
 ```
 
