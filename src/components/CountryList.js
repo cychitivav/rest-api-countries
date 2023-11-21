@@ -17,11 +17,8 @@ function CountryList(props) {
 						.includes(props?.search?.toLowerCase())
 				) {
 					return (
-						<Link to={`/detail/${country.cca3}`}>
-							<li
-								key={index}
-								className={darkMode ? "dark-theme" : "light-theme"}
-							>
+						<li key={index} className={darkMode ? "dark-theme" : "light-theme"}>
+							<Link to={`/detail/${country.cca3}`}>
 								<img
 									src={country.flags.svg}
 									alt={`${country.name.common} flag`}
@@ -33,8 +30,8 @@ function CountryList(props) {
 									<strong>Region: </strong> {country.region} <br />
 									<strong>Capital: </strong> {country.capital}
 								</p>
-							</li>
-						</Link>
+							</Link>
+						</li>
 					);
 				} else {
 					return null;
