@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-solution-hf2kqadJeD)
+- Live Site URL: [cristianchitiva.dev](https://cristianchitiva.dev/rest-api-countries/)
 
 ## My process
 
@@ -48,29 +48,36 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to use some React hooks like useEffect and useState. useEffect to make requests to the API and it repeats with the empty dependency array so that it only runs once. UseState to handle the state of the application and be able to change the theme of it.
 
-To see how you can add code snippets, see below:
+I also used useContext to be able to pass the state of the application to the child components without having to pass them as props, this is useful for the dark mode.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+```js
+import { createContext, useState, useEffect } from "react";
 ```
 
+With CSS, I learned how to configure the columns of a grid with repeat and auto-fit to fit the size of the screen or auto-fill to fit the size of the elements it contains.
+
 ```css
-.proud-of-this-css {
-	color: papayawhip;
+.element {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 2rem;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
-};
-```
+In html I understood that the Link components of React Router are nothing more than `<a>` tags with the difference that they do not reload the page and only change the url. These must go inside the li of a list to work correctly.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+```html
+<li>
+  <Link to={`/country/${country.alpha3Code}`}>
+    <img src={country.flag} alt={country.name} />
+  </Link>
+</li>
+```
 
 ## Author
 
-- Website - [ACristian Chitiva](https://www.cristianchitiva.dev)
+- Website - [Cristian Chitiva](https://www.cristianchitiva.dev)
 - Frontend Mentor - [@cychitivav](https://www.frontendmentor.io/profile/cychitivav)
