@@ -120,9 +120,8 @@ option {
 ul {
     background-color: transparent;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 270px);   
-    grid-gap: 3rem; 
-    justify-content: space-between;    
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));   
+    grid-gap: 4rem;  
     padding: 1rem 5rem;
 }
 
