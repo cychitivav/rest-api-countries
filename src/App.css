@@ -85,7 +85,6 @@ form {
 form.searchBox {
     width: 100%;
     max-width: 500px;
-    min-width: 320px;
     padding: 1rem;
 }
 
@@ -120,8 +119,8 @@ option {
 ul {
     background-color: transparent;
     display: grid;
-    grid-template-columns: repeat(4, minmax(270px,1fr));   
-    grid-gap: 4rem;  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 3rem;  
     padding: 1rem 5rem;
 }
 
@@ -229,7 +228,6 @@ main > div p span {
 
     ul {
         padding: 1rem;
-        grid-template-columns: repeat(1, minmax(270px,1fr));
     }
 
     main {
