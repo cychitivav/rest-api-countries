@@ -15,8 +15,11 @@ function Detail({ countries }) {
 			<Header />
 			<nav>
 				<Link to="/">
-					<button className={darkMode ? "dark-theme" : "light-theme"}>
-						<span>←</span> Back{" "}
+					<button
+						className={darkMode ? "dark-theme" : "light-theme"}
+						type="button"
+					>
+						<span>←</span> Back
 					</button>
 				</Link>
 			</nav>

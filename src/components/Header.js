@@ -8,7 +8,7 @@ function Header() {
 	return (
 		<header className={darkMode ? "dark-theme" : "light-theme"}>
 			<h1>Where in the world?</h1>
-			<button onClick={toggleTheme}>
+			<button onClick={toggleTheme} type="button">
 				<MoonIcon />
 				Dark Mode
 			</button>
