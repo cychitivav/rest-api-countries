@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "../ThemeContext";
 import { Header } from "../components/Header";
 import { useParams } from "react-router-dom";
@@ -8,7 +8,22 @@ function Detail({ countries }) {
 	const { code } = useParams();
 	const { darkMode } = useTheme();
 
-	const country = countries.find((country) => country.cca3 === code);
+	const [country, setCountry] = useState([]);
+
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const response = await fetch("https://restcountries.com/v3.1/alpha/" + code);
+				const data = await response.json();
+				setCountries(data?.[0]);
+			} catch (error) {
+				console.error("Error al obtener los datos:", error);
+			}
+		};
+
+		getData();
+	}, []);
+
 
 	return (
 		<>
