@@ -5,14 +5,14 @@ import { useParams, Link } from "react-router-dom";
 
 function Detail({ countries }) {
 	const { darkMode } = useTheme();
+	const { code } = useParams();
 
 	const [country, setCountry] = useState([]);
 
 	useEffect(() => {
 		const getData = async () => {
 			try {
-				const { code } = useParams();
-				const response = await fetch("https://restcountries.com/v3.1/alpha/" + code);
+				const response = await fetch(`https://restcountries.com/v3.1/alpha/${code || ""}`);
 				const data = await response.json();
 				setCountry(data?.[0]);
 			} catch (error) {
@@ -21,7 +21,7 @@ function Detail({ countries }) {
 		};
 
 		getData();
-	}, []);
+	}, [code]);
 
 	return (
 		<>
