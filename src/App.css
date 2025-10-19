@@ -1,250 +1,252 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration: none;
-    color: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  color: inherit;
 }
 
 *:visited {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 svg {
-    height: 1em;
-    margin: 0 0.5rem;
+  height: 1em;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  fill: currentColor;
 }
 
 body {
-    background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 98%);
 }
 
 header {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 1.5rem;
-    font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 header button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 14px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: transparent;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 5rem;
-}   
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+}
 
 nav button {
-    background-color: white;
-    border: none;
-    border-radius: 0.35rem;
-    cursor: pointer;
-    padding: 0.5rem 2rem;
-    margin: 1rem 0;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 nav button span {
-    margin-right: 0.5rem;
-    line-height: 1em;   
+  margin-right: 0.5rem;
+  line-height: 1em;
 }
 
 form {
-    background-color: white;
-    border-radius: 0.35rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    margin: 1rem 0;
+  background-color: white;
+  border-radius: 0.35rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 1rem 0;
 }
 
 form.searchBox {
-    width: 100%;
-    max-width: 500px;
-    padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
 }
 
 input {
-    border: none;
-    background-color: transparent;
-    margin-left: 1rem;
-    width: 100%;
+  border: none;
+  background-color: transparent;
+  margin-left: 1rem;
+  width: 100%;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 select {
-    background-color: transparent;
-    border: none;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 1rem;
-    margin-right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1rem;
+  margin-right: 1rem;
 }
 
 select:focus {
-    outline: none;
+  outline: none;
 }
 
 option {
-    color: inherit;
+  color: inherit;
 }
 
 ul {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 3rem;  
-    padding: 1rem 5rem;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 3rem;
+  padding: 1rem 5rem;
 }
 
 li {
-    background-color: white;
-    border-radius: 0.35rem;
-    list-style: none;
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.35rem;
+  list-style: none;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 li img {
-    width: 100%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 li h2 {
-    padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem 1rem;
 }
 
 li p {
-    padding: 1rem 2rem 2rem;
-    font-size: 14px;
-    font-weight: 600;
-    flex-grow: 1;
+  padding: 1rem 2rem 2rem;
+  font-size: 14px;
+  font-weight: 600;
+  flex-grow: 1;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 5rem;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 5rem;
+  flex-wrap: nowrap;
 }
 
 main > div {
-    padding: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 main > img {
-    width: 50%;
+  width: 50%;
 }
 
 main > div h2 {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 main > div div {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: left;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  width: 100%;
 }
 
 main > div p {
-    margin: 1rem;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.8rem;
+  margin: 1rem;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8rem;
 }
 
 main > div p strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 main > div p span {
-    border: 1px solid hsl(0, 0%, 80%);
-    padding: 0.1rem 1.5rem;
-    border-radius: 0.1rem;
-    box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
-    display: inline-block;
-    margin: 0 0.1rem;
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 0.1rem 1.5rem;
+  border-radius: 0.1rem;
+  box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 0 0.1rem;
 }
 
 .dark-theme {
-    background-color: hsl(209, 23%, 22%);
-    color: white;
+  background-color: hsl(209, 23%, 22%);
+  color: white;
 }
 
 .light-theme {
-    background-color: white;
-    color: hsl(200, 15%, 8%);
+  background-color: white;
+  color: hsl(200, 15%, 8%);
 }
 
-@media screen and (max-width: 500px ) {
-    header {
-        padding: 2rem 1rem;
-    }
+@media screen and (max-width: 500px) {
+  header {
+    padding: 2rem 1rem;
+  }
 
-    header h1 {
-        font-size: 16px;
-    }
+  header h1 {
+    font-size: 16px;
+  }
 
-    nav {
-        padding: 1rem;
-    }
+  nav {
+    padding: 1rem;
+  }
 
-    ul {
-        padding: 1rem;
-    }
+  ul {
+    padding: 1rem;
+  }
 
-    main {
-        flex-direction: column;
-        padding: 1rem;
-    }
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-    main > img {
-        width: 100%;
-    }
+  main > img {
+    width: 100%;
+  }
 
-    main > div {
-        padding: 0;
-    }
+  main > div {
+    padding: 0;
+  }
 
-    main > div > div {
-        flex-direction: column;
-    }
+  main > div > div {
+    flex-direction: column;
+  }
 }
