@@ -15,7 +15,7 @@ function Detail({ countries }) {
 			try {
 				const response = await fetch("https://restcountries.com/v3.1/alpha/" + code);
 				const data = await response.json();
-				setCountries(data?.[0]);
+				setCountry(data?.[0]);
 			} catch (error) {
 				console.error("Error al obtener los datos:", error);
 			}
