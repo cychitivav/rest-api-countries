@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "../ThemeContext";
 import { Header } from "../components/Header";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function Detail({ countries }) {
-	const { code } = useParams();
 	const { darkMode } = useTheme();
 
 	const [country, setCountry] = useState([]);
@@ -13,6 +11,7 @@ function Detail({ countries }) {
 	useEffect(() => {
 		const getData = async () => {
 			try {
+				const { code } = useParams();
 				const response = await fetch("https://restcountries.com/v3.1/alpha/" + code);
 				const data = await response.json();
 				setCountry(data?.[0]);
@@ -23,7 +22,6 @@ function Detail({ countries }) {
 
 		getData();
 	}, []);
-
 
 	return (
 		<>
