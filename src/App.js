@@ -12,7 +12,7 @@ function App() {
 	useEffect(() => {
 		const getData = async () => {
 			try {
-				const response = await fetch("https://restcountries.com/v3.1/all");
+				const response = await fetch("https://restcountries.com/v3.1/all?fields=");
 				const data = await response.json();
 				setCountries(data);
 			} catch (error) {
